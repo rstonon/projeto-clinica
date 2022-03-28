@@ -1,0 +1,10 @@
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\bin\Debug\ProjetoConfiguracoes.exe.config
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\bin\Debug\ProjetoConfiguracoes.exe
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\bin\Debug\ProjetoConfiguracoes.pdb
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.csprojAssemblyReference.cache
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.Properties.Resources.resources
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.csproj.GenerateResource.cache
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.csproj.CoreCompileInputs.cache
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.exe
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.pdb
+D:\SistemaClinica\ProjetoConfiguracoes\Configuracoes\ProjetoConfiguracoes\obj\Debug\ProjetoConfiguracoes.FrmConfiguracoes.resources

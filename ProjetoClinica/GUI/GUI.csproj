@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75D26E55-D911-4901-830D-9AC73964A7F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.Grid.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=18.4460.0.30, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliares.cs" />
+    <Compile Include="Cadastros\FrmCidadesCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmCidadesCadastro.Designer.cs">
+      <DependentUpon>FrmCidadesCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmColaboradoresCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmColaboradoresCadastro.Designer.cs">
+      <DependentUpon>FrmColaboradoresCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmEmpresasCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmEmpresasCadastro.Designer.cs">
+      <DependentUpon>FrmEmpresasCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmDocumentosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmDocumentosCadastro.Designer.cs">
+      <DependentUpon>FrmDocumentosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmGruposCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmGruposCadastro.Designer.cs">
+      <DependentUpon>FrmGruposCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmPerfisUsuariosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmPerfisUsuariosCadastro.Designer.cs">
+      <DependentUpon>FrmPerfisUsuariosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmTiposCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmTiposCadastro.Designer.cs">
+      <DependentUpon>FrmTiposCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmUnidadesMedidaCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmUnidadesMedidaCadastro.Designer.cs">
+      <DependentUpon>FrmUnidadesMedidaCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmUsuariosCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmUsuariosCadastro.Designer.cs">
+      <DependentUpon>FrmUsuariosCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracoes.cs" />
+    <Compile Include="FrmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfig.Designer.cs">
+      <DependentUpon>FrmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAguarde.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAguarde.Designer.cs">
+      <DependentUpon>FrmAguarde.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermissoesUsuario.cs" />
+    <Compile Include="Pesquisas\FrmCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmCidades.Designer.cs">
+      <DependentUpon>FrmCidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmColaboradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmColaboradores.Designer.cs">
+      <DependentUpon>FrmColaboradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmEmpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmEmpresas.Designer.cs">
+      <DependentUpon>FrmEmpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmDocumentos.Designer.cs">
+      <DependentUpon>FrmDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmGrupos.Designer.cs">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmPerfisUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmPerfisUsuarios.Designer.cs">
+      <DependentUpon>FrmPerfisUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmTipos.Designer.cs">
+      <DependentUpon>FrmTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmUnidadesMedida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmUnidadesMedida.Designer.cs">
+      <DependentUpon>FrmUnidadesMedida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisas\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisas\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastros\FrmCidadesCadastro.resx">
+      <DependentUpon>FrmCidadesCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmColaboradoresCadastro.resx">
+      <DependentUpon>FrmColaboradoresCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmEmpresasCadastro.resx">
+      <DependentUpon>FrmEmpresasCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmDocumentosCadastro.resx">
+      <DependentUpon>FrmDocumentosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmGruposCadastro.resx">
+      <DependentUpon>FrmGruposCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmPerfisUsuariosCadastro.resx">
+      <DependentUpon>FrmPerfisUsuariosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmTiposCadastro.resx">
+      <DependentUpon>FrmTiposCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmUnidadesMedidaCadastro.resx">
+      <DependentUpon>FrmUnidadesMedidaCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmUsuariosCadastro.resx">
+      <DependentUpon>FrmUsuariosCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAguarde.resx">
+      <DependentUpon>FrmAguarde.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmCidades.resx">
+      <DependentUpon>FrmCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmColaboradores.resx">
+      <DependentUpon>FrmColaboradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmEmpresas.resx">
+      <DependentUpon>FrmEmpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmDocumentos.resx">
+      <DependentUpon>FrmDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmPerfisUsuarios.resx">
+      <DependentUpon>FrmPerfisUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmTipos.resx">
+      <DependentUpon>FrmTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmUnidadesMedida.resx">
+      <DependentUpon>FrmUnidadesMedida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisas\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{3a2a42b7-7b51-4d02-aaf2-4f42a5931f8f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{74213e83-c215-4c21-adae-2e28e2c0ce24}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{94b732d0-8673-41d8-86ca-1ca0002b3448}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

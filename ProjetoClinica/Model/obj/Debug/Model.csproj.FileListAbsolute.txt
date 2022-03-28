@@ -1,0 +1,12 @@
+D:\SistemaClinica\Model\bin\Debug\Model.dll
+D:\SistemaClinica\Model\bin\Debug\Model.pdb
+D:\SistemaClinica\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\SistemaClinica\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\SistemaClinica\Model\obj\Debug\Model.dll
+D:\SistemaClinica\Model\obj\Debug\Model.pdb
+D:\SistemaClinica\ProjetoClinica\Model\bin\Debug\Model.dll
+D:\SistemaClinica\ProjetoClinica\Model\bin\Debug\Model.pdb
+D:\SistemaClinica\ProjetoClinica\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\SistemaClinica\ProjetoClinica\Model\obj\Debug\Model.dll
+D:\SistemaClinica\ProjetoClinica\Model\obj\Debug\Model.pdb
+D:\SistemaClinica\ProjetoClinica\Model\obj\Debug\Model.csproj.AssemblyReference.cache
